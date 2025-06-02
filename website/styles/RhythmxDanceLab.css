@@ -273,9 +273,6 @@
     flex-direction: column;
     border: none;
   }
-  .info h1 {
-    font-size: 1em;
-  }
 
   .bio div.low {
     width: 50%;
@@ -329,7 +326,6 @@
   .bio h1 {
     color:#bb8c54;
     text-align: center;
-    font-size: 1em;
   }
 
   .bio p {
@@ -366,7 +362,7 @@
   }
   .poster-header {
     width: 100%;
-    font-size: 3em;
+    font-size: 4em;
     text-align: center;
     padding: 1em;
     color: #bb8c54;
@@ -632,7 +628,7 @@
         width: 50%;
     }
     .info h1 {
-      font-size: 1em;
+      font-size: 2em;
     }
 
     .class-schedule {
@@ -666,7 +662,7 @@
     }
     .poster-header {
     width: 100%;
-    font-size: 1em;
+    font-size: 2.5em;
     text-align: center;
     padding: 0.5em;
     color: #bb8c54;
