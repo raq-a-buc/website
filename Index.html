@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="RhythmX Dance Lab offers professional dance classes for all age groups. Join us to explore your passion for dance." />
+  <meta name="keywords" content="dance, dance studio, dance classes, RythmX, professional dance, dance lab, clogging" />
+  <title>RhythmX Dance Lab</title>
+  <link rel="icon" href="Images/RhythmxIcon.JPG"/>
+  <link rel="stylesheet" href="styles/RhythmxDanceLab.css"></link>
+</head>
+<body id="body">
+  <div class="vanta-bg" id="vanta-bg"></div>
+  <div class="content">
+    <header>
+      <img src="Images/RhythmxLogo.JPG" alt="RhythmX Dance Lab Logo" class="logo" />
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()" aria-expanded="false" aria-controls="mobileMenu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </header>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home" onclick="HighlightNav('home')">Home</a></li>
+        <li><a href="#class-schedule" onclick="HighlightNav('class-schedule')">Class Schedule</a></li>
+        <li><a href="#register" onclick="HighlightNav('register')">Register</a></li>
+        <li><a target="_blank" href="https://app.gostudiopro.com/online/index.php?account id=31774" onclick="HighlightNav('parent-portal')">Parent Portal</a></li>
+        <li><a href="#contact" onclick="HighlightNav('contact')">Contact</a></li>
+      </ul>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" onclick="toggleMenu()">Home</a>
+        <a href="#class-schedule" onclick="toggleMenu()">Class Schedule</a>
+        <a href="#register" onclick="toggleMenu()">Register</a>
+        <a target="_blank" href="https://app.gostudiopro.com/online/index.php?account id=31774" onclick="toggleMenu()">Parent/Dancer Portal</a>
+        <a href="#contact" onclick="toggleMenu()">Contact</a>
+      </div>
+    </nav>
+
+    <div class="main">
+      <h1 class="poster-header">Summer Camps are here!</h1>
+      <div class="posters">
+        <img class="clogging" src="Images/ClogCamp.jpg"/>
+        <img class="ballet" src="Images/BalletCamp.jpg"/>
+      </div>
+      <div class="home" class="section" id="home">
+        <div class="bottom">
+          <div class="text-container">
+            <h1>Welcome to RhythmX Dance Lab!</h1>
+            <p>We are dedicated to helping our students build self-confidence and find joy and happiness in moving their bodies. In doing that we commit to be a safe place for our students to grow and find their forever dance family.</p>
+          </div>
+          <!--
+          <div class="Image-container">
+            <img src="Images/WelcomeImage.jpg" alt="Welcome Image" class="WelcomeImage" />
+          </div>-->
+        </div>
+      <div class="teachers">
+        <h1>Meet our amazing teachers and directors!</h1>
+        <div class="bio" id="bio">
+          <div id="Kiara">
+            <div class="info">
+              <h1>Kiara A.</h1>
+              <img src="Images/Kiara.jpeg"/>
+            </div>
+            <div class="low">
+              <p>My name is Kiara Arrington, I am a co-Director of RhythmX Dance Lab. I have been Clogging since I was 5 years old. I was born and raised in Idaho and learned how to clog with a studio called Rocky Top Cloggers which then in 2014 started transitioning to what is now known as Ground Control Studio located in Twin Falls, ID. Once Adison and Hailey Hillstead took over I was able to tremendously grow as a clogger and a choreographer. So much so that I won several overalls and MVP’s both individually and with my team. I was able to join the All American team in 2016 and in 2019 I won MVP Acapella Solo which is one of my greatest accomplishments to this day. I ended up moving to Utah and parting ways with that studio in 2021. I then started teaching several classes at Starz Unlimited Studio for 3 years until I was able to go off on my own and open a dance studio alongside Raquel Bucio. In 2018 I joined a traveling clogging team called Clog America. I have traveled all over Europe and Asia performing with this team for the past 7 years and will continue to do so in the future. It has always been a dream of mine to have my own studio and now my dreams are coming true! I can't wait to teach and coach you and your kids!</p>
+              <button class="bio-link" onclick="expand('Kiara')">Biography</button>
+              <button href="#bio" class="back" onclick="minimize('Kiara')">Back</button>
+              </div>
+          </div>
+          <div id="Raquel">
+            <div class="info">
+              <h1>Raquel B.</h1>
+              <img src="Images/Raquel.jpg"/>
+            </div>
+          <div class="low">
+            <p>Hello, I’m Raquel Bucio, co-director of RhythmX Dance Lab. I started clogging in the 3rd grade when my elementary school teacher started teaching clogging after school. I immediately fell in love, and that summer I relentlessly asked my mom to keep me in clogging. I danced with Extravagance for 12 years, which specialized in clogging, hip-hop, and jazz, which gave me exposure to other dance types. I then started dancing at Starz Unlimited for a few years and also became a competition team teacher. I have been given so many wonderful opportunities through clogging and dance, including making so many new friends, being a team captain, joining the All-American champions team multiple times, teaching clogging for the last 6 years, and traveling Europe as a representative of the United States of America with Clog America and AFE. I am overjoyed to be starting this dream with Kiara Arrington. I’m excited to help my future students grow and see just how amazing each and every one of them is!</p>
+            <button class="bio-link" onclick="expand('Raquel')">Biography</button>
+            <button href="#bio" class="back" onclick="minimize('Raquel')">Back</button>
+          </div>
+          </div>
+          <div id="Ahrana">
+            <div class="info">
+              <h1>Ahrana B.</h1>
+              <img src="Images/Ahrana.jpg"/>
+
+            </div>
+            <div class="low">
+              <p>Ahrana Bell will be teaching our Ballet program! She has 20 years of experience training in the Dance World, along with 7 years of teaching experience. Her background includes training from various studios, as well as moving onto collegiate dance courses as an adult. She has trained in various art forms, but her favorite two being Ballet and Jazz. She enjoys helping young artists create their own voice through expression of movement. Her motto is “You get what you work for, not what you wish for.” She strives to help her students succeed in their goals and achieve confidence in themselves to create their own artistic voice. </p>
+              <button class="bio-link" onclick="expand('Ahrana')">Biography</button>
+              <button href="#bio" class="back" onclick="minimize('Ahrana')">Back</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="class-schedule" class="section" id="class-schedule">
+        <div class="class-about">
+          <p>We are super excited to share our class schedule for the 2025–2026 dance season—our first of many! This schedule has been thoughtfully designed to offer a variety of classes for all ages and skill levels, and we can’t wait to welcome our dancers to the studio. Please note that while we’ve done our best to create a solid plan, the schedule is subject to change as we finalize details and continue to grow. Any updates will be shared in a timely manner to ensure a smooth and successful start to our inaugural season.</p>
+        </div>
+        <div class="schedule">
+          <h1 class="schedule-header">Class Schedule</h1>
+          <img src="Images/2025 Class Schedule.jpeg"/>
+        </div>
+      </div>
+      <div class="r-c">
+        <div class="register" id="register">
+          <div class="pricing">
+            <img src="Images/prices.jpeg"/>
+          </div>
+          <a target="_blank" href="https://app.gostudiopro.com/online/index.php?account id=31774">Click here to Register!</a>
+
+        </div>
+        <div class="c-h">
+          <div class="hours">
+            <h1>Hours</h1>
+            <h2>Monday-Thursday:</h2>
+            <h2>4pm-9pm</h2>
+          </div>
+          <div class="contact" id="contact">
+            <h1>Contact Us</h1>
+            <h2>Kiara Arrington: 208-420-5467</h2>
+            <h2>Raquel Bucio: 801-903-9629</h2>
+            <h2>Email: rhythmxdancelab@gmail.com</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2025 RythmX Dance Lab. All rights reserved.</p>
+      <p class="address">RythmX Dance Lab, 4256 W 8370 S, West Jordan, UT 84088</p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
+  <script src="scripts/RhythmxDanceLab.js"></script>
+</body>
+</html>
