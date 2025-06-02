@@ -628,6 +628,9 @@
     .bio div.info img {
         width: 50%;
     }
+    .info h1 {
+      font-size: 1em;
+    }
 
     .class-schedule {
         flex-direction: column-reverse;
