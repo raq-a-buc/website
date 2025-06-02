@@ -273,6 +273,9 @@
     flex-direction: column;
     border: none;
   }
+  .info h1 {
+    font-size: 1em;
+  }
 
   .bio div.low {
     width: 50%;
@@ -363,7 +366,7 @@
   }
   .poster-header {
     width: 100%;
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
     padding: 1em;
     color: #bb8c54;
