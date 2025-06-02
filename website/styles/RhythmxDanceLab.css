@@ -12,6 +12,10 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  a[x-apple-data-detectors] {
+    color: inherit !important;
+  }
   
   html {
     scroll-behavior: smooth;
@@ -190,9 +194,9 @@
     justify-content: center;
     color: white;
     height: auto;
-    padding: 1em;
+    padding: 0.5em;
     flex-direction: column;
-    margin: 1em;
+    margin: 0.5em;
   }
 
   .home {
@@ -322,6 +326,7 @@
   .bio h1 {
     color:#bb8c54;
     text-align: center;
+    font-size: 2em;
   }
 
   .bio p {
@@ -652,5 +657,12 @@
     }
     .posters img {
         max-width: 100%;
+    }
+    .poster-header {
+    width: 100%;
+    font-size: 2.5em;
+    text-align: center;
+    padding: 0.5em;
+    color: #bb8c54;
     }
   }
