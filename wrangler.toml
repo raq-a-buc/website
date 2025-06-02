@@ -1,6 +1,5 @@
 name = "website"
 compatibility_date = "2025-06-01"
-main = false
 
 [site]
 bucket = "./website"
