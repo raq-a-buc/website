@@ -29,6 +29,14 @@
           });
       }
 
+      document.addEventListener("DOMContentLoaded", () => {
+        const stickyTop = document.querySelector(".header");
+        const stickyBottom = document.querySelector("nav");
+
+        const stickyTopHeight = stickyTop.offsetHeight;
+          stickyBottom.style.top = `${stickyTopHeight}px`;
+      });
+
       function expand(name) {
         const sections = document.querySelectorAll('.bio div'); // Select all person divs
         sections.forEach((person) => {

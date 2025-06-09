@@ -51,7 +51,7 @@
     height: 100%; /* Set full height for scrolling */
   }
 
-  header {
+  .header {
     background-color: #1d342c;
     color: white;
     padding: 2em 1em;
@@ -60,6 +60,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    overflow: visible;
   }
 
   .logo {
@@ -484,7 +485,7 @@
     align-self: center;
   }
   .c-h div.hours {
-    text-align: right;
+    text-align: left;
   }
   .c-h div.contact {
     text-align: left;
@@ -573,13 +574,18 @@
   }
 
   @media (max-width: 768px) {
-    header {
-        padding-top: 2em;
+    .header {
+        padding: 1em;
+        position: sticky;
+        top: 0;
+        flex-direction: row;
+        width: 100%;
+        overflow: visible;
+        z-index: 100;
     }
 
     nav {
         position: sticky;
-        top: 3.3125em;
         z-index: 100;
     }
 
@@ -589,13 +595,13 @@
 
     .hamburger {
         display: flex;
-        position: fixed; /* Use fixed positioning */
-        top: 0; /* Distance from the top of the viewport */
+        position: sticky; /* Use fixed positioning */
+        top: 0;
         z-index: 1000; /* Ensure it's above other content */
         background-color: var(--primary-green); /* Background for visibility */
         padding: 0.5em; /* Increase touch target size */
         border-radius: 5px; /* Rounded corners for aesthetics */
-        width: 100%;
+        width: 50%;
     }
 
     .mobile-menu {
@@ -608,10 +614,8 @@
     }
 
     .logo {
-      width: 60%;
+      width: 50%;
       height: auto;
-      margin-bottom: 0.5em;
-      padding-top: 3em;
     }
 
 
