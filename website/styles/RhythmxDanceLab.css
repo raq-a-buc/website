@@ -12,10 +12,6 @@
     padding: 0;
     box-sizing: border-box;
   }
-
-  a[x-apple-data-detectors] {
-    color: inherit !important;
-  }
   
   html {
     scroll-behavior: smooth;

@@ -26,17 +26,19 @@
         }
       }
 
+      let highlightTimeout;
       function HighlightNav(name) {
         const navLinks = document.querySelectorAll(".nav-links a");
-        navLinks.forEach((link) => {
-            link.classList.remove("active");
-            if (link.getAttribute("href").includes(name)) {
-              link.classList.add("active");
-              setTimeout(() => {
-                link.classList.remove("active");
-              }, 5000);
-            }
-          });
+          clearTimeout(highlightTimeout);
+          navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(name)) {
+          link.classList.add("active");
+          highlightTimeout = setTimeout(() => {
+          link.classList.remove("active");
+          }, 5000);
+        }
+        });
       }
 
       document.addEventListener("DOMContentLoaded", () => {
