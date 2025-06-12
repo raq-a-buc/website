@@ -23,7 +23,7 @@
           }
         } else {
           stickyBottom.style.top = `${stickyTopHeight}px`;
-        }
+        };
       }
 
       let highlightTimeout;
