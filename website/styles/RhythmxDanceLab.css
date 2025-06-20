@@ -254,7 +254,7 @@
     flex-direction: column;
     align-items: center;
     border: 5px solid #1d342c;
-    width: calc(100% / 3);
+    width: calc(100% / 4);
     height: auto;
     transition: width 0.5s ease;
     padding-bottom: 1em;
@@ -548,6 +548,12 @@
       width: 103%;
     }
     
+    .bio {
+      flex-wrap: wrap;
+    }
+    .bio div {
+      width: 50%;
+    }
     .bio div.expand {
         flex-wrap: wrap;
     }
